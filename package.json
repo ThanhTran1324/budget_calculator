@@ -2,7 +2,9 @@
   "name": "budget-calculator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thanhtran1324.github.io/budget_calculator/",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-icon": "^1.0.0",
@@ -11,6 +13,8 @@
     "uuid": "^3.3.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

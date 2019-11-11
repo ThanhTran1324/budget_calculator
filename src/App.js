@@ -7,7 +7,11 @@ import uuid from "uuid/v4";
 
 const initialExpenses = localStorage.getItem("expenses")
   ? JSON.parse(localStorage.getItem("expenses"))
-  : [];
+  : [
+      { id: uuid(), amount: 2000, charge: "Home payment" },
+      { id: uuid(), amount: 1000, charge: "Car payment" },
+      { id: uuid(), amount: 500, charge: "Student Loan payment" }
+    ];
 function App() {
   /******************* state values  *********************/
   // all expenses, add expense
